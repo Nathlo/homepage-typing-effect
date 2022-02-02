@@ -19,6 +19,7 @@ header nav {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 200;
 }
 
 nav .navbar {
@@ -89,4 +90,96 @@ nav .navbar .logo {
   color: #2c3e50;
   border-right: 2px solid #2c3e50;
   transform: translateY(-50%);
+}
+
+.content {
+  position: absolute;
+  top: 33%;
+  left: 7%;
+}
+
+.content .text {
+  font-size: 27px;
+  color: #2c3e50;
+}
+
+.content .name {
+  font-size: 75px;
+  margin: -20px 0 0 -3px;
+  color: #2c3e50;
+}
+
+.content .job {
+  display: flex;
+  font-size: 40px;
+  color: #2c3e50;
+}
+
+.content .job .typing-text {
+  margin-left: 10px;
+  white-space: nowrap; /* Put all in one single line */
+  overflow: hidden;
+  border-right: 4px solid #1de2d1;
+  color: #1de2d1;
+  animation: typing 5s steps(28) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 30ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+.content .buttons {
+  margin: 20px 0 0 50px;
+}
+
+.content .buttons button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: linear-gradient(135deg, #2afadf 10%, #c346c2 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.content .buttons button:hover {
+  transform: scale(0.98);
+}
+
+header .hero-photo img {
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  height: 95%;
+}
+
+header .media-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.media-icons a {
+  margin-left: 8px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2c3e50;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover {
+  opacity: 1;
 }
