@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
 
 * {
   margin: 0;
@@ -48,6 +48,7 @@ nav .navbar .logo {
 .navbar .menu li {
   margin: 0 10px;
   list-style: none;
+  opacity: 0.7;
 }
 
 .menu li a {
@@ -58,27 +59,30 @@ nav .navbar .logo {
 }
 
 .menu li a:hover {
-  color: #000;
+  /* color: #000; */
+  color: #e84fd8;
 }
 
 .navbar .search-box {
   position: relative;
   width: 250px;
-  height: 50px;
+  height: 45px;
+  opacity: 0.7;
 }
 
 .search-box input[type="text"] {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   padding: 0 10px 0 40px;
   border: 2px solid #2c3e50;
   border-radius: 8px;
   color: #2c3e50;
   font-size: 18px;
   outline: none;
+  opacity: 0.5;
 }
 
 .search-box a {
@@ -90,12 +94,14 @@ nav .navbar .logo {
   color: #2c3e50;
   border-right: 2px solid #2c3e50;
   transform: translateY(-50%);
+  opacity: 0.8;
 }
 
 .content {
   position: absolute;
   top: 33%;
   left: 7%;
+  z-index: 100;
 }
 
 .content .text {
@@ -119,8 +125,8 @@ nav .navbar .logo {
   margin-left: 10px;
   white-space: nowrap; /* Put all in one single line */
   overflow: hidden;
-  border-right: 4px solid #1de2d1;
-  color: #1de2d1;
+  border-right: 4px solid #de63ff;
+  color: #de63ff;
   animation: typing 5s steps(28) infinite;
 }
 
@@ -137,7 +143,7 @@ nav .navbar .logo {
 }
 
 .content .buttons {
-  margin: 20px 0 0 50px;
+  margin: 40px 0 0 5px;
 }
 
 .content .buttons button {
@@ -148,7 +154,7 @@ nav .navbar .logo {
   border: none;
   border-radius: 6px;
   outline: none;
-  background: linear-gradient(135deg, #2afadf 10%, #c346c2 100%);
+  background: linear-gradient(135deg, #9d4fe8 10%, #e84fd8 100%);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -159,9 +165,20 @@ nav .navbar .logo {
 
 header .hero-photo img {
   position: absolute;
-  right: 80px;
+  right: 0;
   bottom: 0;
   height: 95%;
+}
+
+.tagline {
+  position: absolute;
+  right: 350px;
+  bottom: 40px;
+  z-index: 99;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #e84fd8;
 }
 
 header .media-icons {
@@ -169,7 +186,8 @@ header .media-icons {
   flex-direction: column;
   position: absolute;
   right: 40px;
-  bottom: 40px;
+  bottom: 90px;
+  transition: all 0.3s ease;
 }
 
 .media-icons a {
@@ -181,5 +199,7 @@ header .media-icons {
   transition: all 0.3s ease;
 }
 .media-icons a:hover {
+  color: #e84fd8;
   opacity: 1;
+  transform: scale(1.1);
 }
