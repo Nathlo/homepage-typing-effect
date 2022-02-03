@@ -59,7 +59,6 @@ nav .navbar .logo {
 }
 
 .menu li a:hover {
-  /* color: #000; */
   color: #e84fd8;
 }
 
@@ -168,9 +167,14 @@ header .hero-photo img {
   right: 0;
   bottom: 0;
   height: 95%;
+  transition: all 0.3s ease;
+}
+/* added */
+header .hero-photo img:hover {
+  transform: scale(0.9);
 }
 
-.tagline {
+header .tagline {
   position: absolute;
   right: 350px;
   bottom: 40px;
@@ -179,6 +183,12 @@ header .hero-photo img {
   font-weight: 400;
   font-style: italic;
   color: #e84fd8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* added */
+header .tagline:hover {
+  transform: scale(1.5);
 }
 
 header .media-icons {
